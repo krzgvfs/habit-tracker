@@ -3,5 +3,10 @@
         <h1>
             Veja seus hábitos ganharem vida
         </h1>
+
+        @auth
+            Bem vindo(a), {{ auth()->user()->name }}!
+        @endauth
+
     </main>
 </x-layout>
